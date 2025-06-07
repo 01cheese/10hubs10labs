@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec1fe872-ce28-410d-b8ea-861d19b19def" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.es.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.ja-JP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.ko.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.th.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/README.zh-CN.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/ex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/components/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/src/components/Footer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/content/posts/draft.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/content/posts/main.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/content/spec/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/src/content/spec/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10hubs10labs/src/pages/rss.xml.ts" beforeDir="false" afterPath="$PROJECT_DIR$/10hubs10labs/src/pages/rss.xml.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +71,7 @@
       <updated>1748895232272</updated>
       <workItem from="1748895233295" duration="7598000" />
       <workItem from="1749059051879" duration="12000" />
-      <workItem from="1749296286742" duration="373000" />
+      <workItem from="1749296286742" duration="899000" />
     </task>
     <servers />
   </component>
