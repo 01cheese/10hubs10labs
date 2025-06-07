@@ -1,11 +1,10 @@
 ---
-title: "My Awesome Post"
-description: "A quick summary of my awesome post"
-pubDate: 2025-06-07
-author: "Vadym"
-tags: ["astro", "project", "guide"]
+title: my-awesome-post
+published: 2025-06-07
+description: ''
+image: ''
+tags: []
+category: ''
+draft: false 
+lang: ''
 ---
-
-# My Awesome Post
-
-This is the content of my new article.
