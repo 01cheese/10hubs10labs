@@ -89,8 +89,7 @@ start index.html
 
 ## YouTube
 
-<iframe width="100%" height="468" src="https://www.youtube.com/watch?v=KT4_vYQYe8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KT4_vYQYe8Y?si=CuvciLxvi1lzXBHN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 
 ## References
