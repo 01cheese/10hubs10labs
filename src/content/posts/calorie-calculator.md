@@ -3,7 +3,7 @@ title: Lightning Generator
 published: 2025-06-07
 updated: 2025-06-07
 description: "Generate realistic animated lightning bolts using Canvas and JavaScript"
-image: "./assets/img/lightning_generator.png"
+image: "./assets/img/calorie_calculator.png"
 tags: [JS, Canvas, Visual, Lightning, 300lines]
 category: Projects
 draft: false
