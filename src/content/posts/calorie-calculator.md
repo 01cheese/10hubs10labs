@@ -1,109 +1,112 @@
 ---
-title: AI Calorie Calculator
-published: 2025-06-15
-updated: 2025-06-15
-description: "Upload a food photo and instantly get its calories using FastAPI and a HuggingFace image model — all under 300 lines of code."
-image: "./assets/img/calorie_calculator.png"
-tags: [Python, FastAPI, ML, HuggingFace, AI, 300lines]
+title: Lightning Generator
+published: 2025-06-07
+updated: 2025-06-07
+description: "Generate realistic animated lightning bolts using Canvas and JavaScript"
+image: "./assets/img/lightning_generator.png"
+tags: [JS, Canvas, Visual, Lightning, 300lines]
 category: Projects
 draft: false
 lang: "en"
 ---
 
-# 🧠 AI Calorie Calculator
+# ⚡ Lightning Generator
 
-**AI Calorie Calculator** is a smart web app that identifies food from an uploaded image and returns its estimated calories and nutritional values. Built with FastAPI and HuggingFace Transformers, it uses a pre-trained image classification model trained on 101 food categories.
+**Lightning Generator** is a minimalist visual project built with pure JavaScript. It generates realistic animated lightning bolts with branches and glow using HTML5 Canvas — in under 300 lines of code.
 
-All core functionality is implemented in less than **300 lines of Python code**.
+Perfect for:
+- game intros or websites,
+- visual effects,
+- learning recursion and Canvas rendering.
 
 ---
 
 ## Features
 
-- Upload any food image (JPEG, PNG)
-- AI model predicts food class (e.g., pizza, sushi, burger)
-- Displays calories, protein, carbs, and fat
-- Built with FastAPI and served as a web app
-- Fully open source and easy to deploy
+- No libraries — just HTML, CSS, and JavaScript
+- Generates main bolt and random branches
+- Glow and blur effects using Canvas
+- Fully responsive to any screen size
+- Auto-redraw every 2 seconds
 
 ---
 
-## How It Works
+## Algorithm: Midpoint Displacement
 
-1. User uploads an image via the web interface.
-2. The image is sent to the FastAPI backend.
-3. A HuggingFace model (`nateraw/food`) processes the image.
-4. The predicted label is matched with a JSON dataset of nutrition values.
-5. Caloric and nutritional data is returned and displayed.
+The core algorithm is recursive midpoint displacement of a line segment.
 
----
+At each iteration:
+- the segment is split in two;
+- the midpoint is randomly displaced;
+- the process continues until the segment is short enough.
 
-## Example Code (Backend)
+Example function:
 
-```python
-@app.post("/predict/")
-async def predict_food(file: UploadFile = File(...)):
-    image_data = await file.read()
-    image = Image.open(io.BytesIO(image_data)).convert("RGB")
-    inputs = processor(images=image, return_tensors="pt")
-    with torch.no_grad():
-        outputs = model(**inputs)
-        logits = outputs.logits
-        idx = logits.argmax(-1).item()
-    label = labels[idx]
-    nutrition = nutrition_data.get(label, {})
-    return JSONResponse({
-        "predicted_label": label,
-        "nutrition": nutrition
-    })
+```js
+function midpointDisplacement(x1, y1, x2, y2, offset, detail = [], midpoints = []) {
+  const k = 1 + Math.random() * 3;
+  if (offset < 2) {
+    detail.push([x1, y1, x2, y2]);
+  } else {
+    const midX = (x1 + x2) / 2 + (Math.random() - 0.5) * offset * k;
+    const midY = (y1 + y2) / 2 + (Math.random() - 0.5) * offset * k;
+    midpoints.push([midX, midY]);
+    midpointDisplacement(x1, y1, midX, midY, offset / 1.7, detail, midpoints);
+    midpointDisplacement(midX, midY, x2, y2, offset / 1.7, detail, midpoints);
+  }
+  return { segments: detail, midpoints };
+}
 ```
 
 ---
 
-## Technologies Used
+## Rendering Structure
 
-- FastAPI
-- HuggingFace Transformers
-- PIL (Python Imaging Library)
-- JSON nutrition dataset
-- Vanilla HTML + JS frontend
+The project draws several visual layers using Canvas:
+
+- Main lightning bolt
+- Branches emerging from corners
+- Thin sub-branches
+- Screen flash (semi-transparent white overlay)
 
 ---
 
 ## How to Run Locally
 
 ```bash
-git clone https://github.com/01cheese/ML-food-calories-fastAPI
-cd ai-calorie-calculator
-pip install -r requirements.txt
-uvicorn main:app --reload
+git clone https://github.com/01cheese/Lightning-Algorithm
+cd Lightning-Algorithm
+start index.html
 ```
-
-Then open your browser at:  
-`http://127.0.0.1:8000`
 
 ---
 
 ## 🔗 GitHub
 
-[https://github.com/your-username/ai-calorie-calculator](https://github.com/your-username/ai-calorie-calculator)
+[https://github.com/01cheese/Lightning-Algorithm](https://github.com/01cheese/Lightning-Algorithm)
 
 ---
 
 ## YouTube
 
-<iframe width="100%" height="468" src="https://www.youtube.com/embed/UR8eWHFC8s0?si=dm_MbHfku2-0SHCo" title="Lightning Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/KT4_vYQYe8Y?si=CuvciLxvi1lzXBHN" title="Lightning Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
-## 🌐 Live Demo
+## References
 
-[https://10hubs10labs.vercel.app](https://10hubs10labs.vercel.app)
+- [Midpoint Displacement – CG Tutorial](https://lodev.org/cgtutor/randomnoise.html)
+- [Canvas Lightning – Codepen](https://codepen.io/joeyhoer/full/poqzxGg)
+- [Realistic Lightning – Medium](https://medium.com/@justinlloyd/realistic-lightning-in-html5-canvas-8430ecf5005d)
 
 ---
 
 ## Summary
 
-This project is an ideal starter for anyone learning FastAPI, machine learning, or working with image recognition models. It shows how simple AI tools can solve real-world tasks like calorie tracking using just a few lines of code.
+Lightning Generator is:
 
-Made by [your-name](https://github.com/your-username)
+- Simple in structure
+- Visually impressive
+- Great for learning and experimenting
+
+Made by [01cheese](https://github.com/01cheese)
