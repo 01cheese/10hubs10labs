@@ -73,7 +73,7 @@ async def predict_food(file: UploadFile = File(...)):
 ## How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/ai-calorie-calculator
+git clone https://github.com/01cheese/ML-food-calories-fastAPI
 cd ai-calorie-calculator
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -87,6 +87,12 @@ Then open your browser at:
 ## 🔗 GitHub
 
 [https://github.com/your-username/ai-calorie-calculator](https://github.com/your-username/ai-calorie-calculator)
+
+---
+
+## YouTube
+
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/UR8eWHFC8s0?si=dm_MbHfku2-0SHCo" title="Lightning Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
