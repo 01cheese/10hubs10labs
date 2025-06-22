@@ -96,7 +96,7 @@ Or just open `index.html` in your browser.
 
 ## YouTube
 
-<iframe width="100%" height="468" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Fireworks Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/uuchZNyxaIA?si=jRPn-zkJvPJLkgKf" title="Fireworks Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

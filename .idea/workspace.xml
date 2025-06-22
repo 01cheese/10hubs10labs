@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec1fe872-ce28-410d-b8ea-861d19b19def" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/posts/fireworks-generator.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/posts/fireworks-generator.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1749400247653" duration="1111000" />
       <workItem from="1749986858359" duration="2050000" />
       <workItem from="1750002897156" duration="7000" />
-      <workItem from="1750593736411" duration="330000" />
+      <workItem from="1750593736411" duration="950000" />
     </task>
     <servers />
   </component>
